@@ -5,8 +5,6 @@ MODULE: (2018) 5COSC009C.2 Software Development Group Project (IIT Sri Lanka)
 
 # Thuru Care Server
 
-[![N|Solid](https://png.pngtree.com/element_origin_min_pic/17/02/28/745c75d504f336a83a10e6dcf8db44fa.jpg)](https://nodesource.com/products/nsolid)
-
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 ### Setup
