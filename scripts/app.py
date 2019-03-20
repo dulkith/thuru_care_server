@@ -105,6 +105,6 @@ if __name__ == '__main__':
     output_operation = graph.get_operation_by_name(output_name);
 
     # Initialize the Flask Service
-    # Obviously, disable Debug in actual Production
-    app.run(debug=True, port=8000)
+    port = int(os.environ.get('PORT', 8000))
+    app.run(host='0.0.0.0', port=port)
 
