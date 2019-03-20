@@ -13,8 +13,8 @@ from werkzeug.utils import secure_filename
 import numpy as np
 import tensorflow as tf
 
+#Clint images manage.
 UPLOAD_FOLDER = '/home/duka/thuru_care_v3/tensorflask/uploads'
-ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -64,14 +64,13 @@ def load_labels(label_file):
 
 @app.route("/", methods=["POST"])
 def classify():
-    #file_name = request.files['file']
 
+    #Get file from POST method.
     file = request.files['file']
 
     #Save image in server.
     filename = secure_filename(file.filename)
     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-
 
     t = read_tensor_from_image_file(app.config['UPLOAD_FOLDER']+"/"+file.filename,
                                   input_height=input_height,
@@ -119,4 +118,3 @@ if __name__ == '__main__':
     # Initialize the Flask Service
     port = int(os.environ.get('PORT', 8000))
     app.run(host='0.0.0.0', port=port)
-
