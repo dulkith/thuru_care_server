@@ -7,12 +7,17 @@ import logging
 import random
 import time
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect, url_for
+from werkzeug.utils import secure_filename
 
 import numpy as np
 import tensorflow as tf
 
+UPLOAD_FOLDER = '/home/duka/thuru_care_v3/tensorflask/uploads'
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
+
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def load_graph(model_file):
   graph = tf.Graph()
@@ -57,11 +62,13 @@ def load_labels(label_file):
     label.append(l.rstrip())
   return label
 
-@app.route('/')
+@app.route("/", methods=["POST"])
 def classify():
-    file_name = request.args['file']
+    #file_name = request.files['file']
 
-    t = read_tensor_from_image_file(file_name,
+    file = request.files['file']
+
+    t = read_tensor_from_image_file(app.config['UPLOAD_FOLDER']+"/"+file.filename,
                                   input_height=input_height,
                                   input_width=input_width,
                                   input_mean=input_mean,
