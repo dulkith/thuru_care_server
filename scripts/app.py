@@ -68,6 +68,11 @@ def classify():
 
     file = request.files['file']
 
+    #Save image in server.
+    filename = secure_filename(file.filename)
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+
     t = read_tensor_from_image_file(app.config['UPLOAD_FOLDER']+"/"+file.filename,
                                   input_height=input_height,
                                   input_width=input_width,
