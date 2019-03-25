@@ -60,3 +60,9 @@ Note: You can add/change the arguments in the above command
 $ python scripts/label_image.py --image image.png
 ```
 
+////////////////////////////////////  SERVER  //////////////////////////////////// 
+URL : hhtp://www.thurucare.tk:8000
+POST request file=image.type
+
+Come JSON OUT-PUT as Prediction.
+
