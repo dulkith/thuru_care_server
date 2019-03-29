@@ -20,7 +20,13 @@ $ pip install --upgrade tensorflow
 #### Retrain the model
 
 ```sh
-$ python scripts/retrain.py --output_graph=tf_files/retrained_graph.pb --output_labels=tf_files/retrained_labels.txt --image_dir=tf_files/flower_photos
+$ python3 scripts/retrain.py \
+--bottleneck_dir=tf_files/bottlenecks \
+--how_many_training_steps 4000 \
+--model_dir=tf_files/inception \
+--output_graph=tf_files/retrained_graph.pb \
+--output_labels=tf_files/retrained_labels.txt \
+--image_dir=tf_files/thuru_care_data_set
 ```
 
 ### While your computer is training on the new flower dataset let me break down the command and explain what we just did.. 
@@ -60,9 +66,16 @@ Note: You can add/change the arguments in the above command
 $ python scripts/label_image.py --image image.png
 ```
 
-////////////////////////////////////  SERVER  //////////////////////////////////// 
+### ////////////////////////////////////  SERVER  //////////////////////////////////// 
+
+#### Start Flask server
+
+```sh
+$ sudo python app1c.py >> log.txt 2>&1 &
+```
+
 URL : hhtp://www.thurucare.tk:8000
 POST request file=image.type
 
-Come JSON OUT-PUT as Prediction.
+Return JSON OUT-PUT as Prediction.
 
