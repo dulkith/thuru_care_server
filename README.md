@@ -74,8 +74,7 @@ $ python scripts/label_image.py --image image.png
 $ sudo python app1c.py >> log.txt 2>&1 &
 ```
 
-URL : hhtp://www.thurucare.tk:8000
+URL : http://www.thurucare.tk:8000
 POST request file=image.type
-
-Return JSON OUT-PUT as Prediction.
+Return JSON out-put as prediction.
 
