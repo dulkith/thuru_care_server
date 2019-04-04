@@ -62,6 +62,10 @@ def load_labels(label_file):
     label.append(l.rstrip())
   return label
 
+@app.route('/')
+def index():
+    return '<h1>Welcome to Thuru-Care!</h1>'
+
 @app.route("/", methods=["POST"])
 def classify():
 
