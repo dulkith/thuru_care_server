@@ -84,7 +84,7 @@ $ python scripts/label_image.py --image image.png
 ### Start Flask server
 
 ```sh
-$ sudo python app1c.py >> log.txt 2>&1 &
+$ sudo python app.py >> log.txt 2>&1 &
 ```
 
 URL : http://www.thurucare.tk:8000
