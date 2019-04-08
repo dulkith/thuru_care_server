@@ -17,7 +17,7 @@ If your tensorflow is not up-to-date use the following command to update.
 $ pip install --upgrade tensorflow
 ```
 
-#### Retrain the model
+### Retrain the model
 
 ```sh
 $ python3 scripts/retrain.py \
@@ -29,7 +29,20 @@ $ python3 scripts/retrain.py \
 --image_dir=tf_files/thuru_care_data_set
 ```
 
-### While your computer is training on the new flower dataset let me break down the command and explain what we just did.. 
+### Run background training
+
+```
+$ sudo python scripts/retrain.py \
+--bottleneck_dir=tf_files/bottlenecks \
+--how_many_training_steps 4000 \
+--model_dir=tf_files/inception \
+--output_graph=tf_files/retrained_graph.pb \
+--output_labels=tf_files/retrained_labels.txt \
+--image_dir=tf_files/thuru_care_data_set >> log.txt 2>&1 &
+```
+
+
+## While your computer is training on the new flower dataset let me break down the command and explain what we just did.. 
 
 *Italic*  The whole command can be divided into 4 parts
 
@@ -68,10 +81,10 @@ $ python scripts/label_image.py --image image.png
 
 ### ////////////////////////////////////  SERVER  //////////////////////////////////// 
 
-#### Start Flask server
+### Start Flask server
 
 ```sh
-$ sudo python app1c.py >> log.txt 2>&1 &
+$ sudo python app.py >> log.txt 2>&1 &
 ```
 
 URL : http://www.thurucare.tk:8000
