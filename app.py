@@ -18,7 +18,7 @@ import tensorflow as tf
 import json
 
 #Clint images manage.
-UPLOAD_FOLDER = '/home/duka/thuru_care_v3/tensorflask/uploads'
+UPLOAD_FOLDER = '/home/duka/thuru_care/diseases_checked_up_images'
 
 
 app = Flask(__name__)
