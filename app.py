@@ -18,7 +18,7 @@ import tensorflow as tf
 import json
 
 #Clint images manage.
-UPLOAD_FOLDER = '/home/duka/thuru_care/diseases_checked_up_images'
+DISEASES_CHECKED_UP_IMAGES_UPLOAD = '/home/duka/thuru_care/diseases_checked_up_images'
 
 
 app = Flask(__name__)
@@ -30,7 +30,7 @@ api = Api(app=app,
 # create dedicated namespace for GAN client
 ns_conf = api.namespace('api', description='Operations for GAN client')
 
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['DISEASES_CHECKED_UP_IMAGES_UPLOAD'] = DISEASES_CHECKED_UP_IMAGES_UPLOAD
 
 
 # Flask-RestPlus specific parser for image uploading
@@ -131,9 +131,9 @@ def classify(file = None):
 
     #Save image in server.
     filename = secure_filename(file.filename)
-    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+    file.save(os.path.join(app.config['DISEASES_CHECKED_UP_IMAGES_UPLOAD'], filename))
 
-    t = read_tensor_from_image_file(app.config['UPLOAD_FOLDER']+"/"+file.filename,
+    t = read_tensor_from_image_file(app.config['DISEASES_CHECKED_UP_IMAGES_UPLOAD']+"/"+file.filename,
                                   input_height=input_height,
                                   input_width=input_width,
                                   input_mean=input_mean,
