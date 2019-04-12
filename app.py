@@ -12,10 +12,14 @@ from flask_restplus import Api, Resource
 from werkzeug.utils import secure_filename
 
 from werkzeug.datastructures import FileStorage
+from gridfs import GridFS
 
 import numpy as np
 import tensorflow as tf
 import json
+
+from pymongo import MongoClient
+from bson.json_util import dumps
 
 #Clint images manage.
 DISEASES_CHECKED_UP_IMAGES_UPLOAD = '/home/duka/thuru_care/diseases_checked_up_images'
