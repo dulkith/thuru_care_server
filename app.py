@@ -24,6 +24,10 @@ from bson.json_util import dumps
 #Clint images manage.
 DISEASES_CHECKED_UP_IMAGES_UPLOAD = '/home/duka/thuru_care/diseases_checked_up_images'
 
+client = MongoClient('mongodb://thurucare:thurucare@cluster0-shard-00-00-uaw3w.mongodb.net:27017,cluster0-shard-00-01-uaw3w.mongodb.net:27017,cluster0-shard-00-02-uaw3w.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true')
+db = client.thuru_care
+grid_fs = GridFS(db)
+
 
 app = Flask(__name__)
 api = Api(app=app,
