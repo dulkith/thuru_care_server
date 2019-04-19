@@ -1,0 +1,631 @@
+WARNING:tensorflow:From scripts/retrain.py:274: __init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+2019-04-06 18:27:32.310787: W tensorflow/core/framework/op_def_util.cc:355] Op BatchNormWithGlobalNormalization is deprecated. It will cease to work in GraphDef version 9. Use tf.nn.batch_normalization().
+INFO:tensorflow:Looking for images in 'Ambarella___Cholorosis'
+INFO:tensorflow:Looking for images in 'Ambarella___healthy'
+INFO:tensorflow:Looking for images in 'Apple___Apple_scab'
+INFO:tensorflow:Looking for images in 'Apple___Black_rot'
+INFO:tensorflow:Looking for images in 'Apple___Cedar_apple_rust'
+INFO:tensorflow:Looking for images in 'Apple___healthy'
+INFO:tensorflow:Looking for images in 'Badam___Black_spots'
+INFO:tensorflow:Looking for images in 'Badam___healthy'
+INFO:tensorflow:Looking for images in 'Blueberry___healthy'
+INFO:tensorflow:Looking for images in 'Cherry_(including_sour)___Powdery_mildew'
+INFO:tensorflow:Looking for images in 'Cherry_(including_sour)___healthy'
+INFO:tensorflow:Looking for images in 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot'
+INFO:tensorflow:Looking for images in 'Corn_(maize)___Common_rust_'
+INFO:tensorflow:Looking for images in 'Corn_(maize)___Northern_Leaf_Blight'
+INFO:tensorflow:Looking for images in 'Corn_(maize)___healthy'
+INFO:tensorflow:Looking for images in 'Grape___Black_rot'
+INFO:tensorflow:Looking for images in 'Grape___Esca_(Black_Measles)'
+INFO:tensorflow:Looking for images in 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)'
+INFO:tensorflow:Looking for images in 'Grape___healthy'
+INFO:tensorflow:Looking for images in 'Orange___Haunglongbing_(Citrus_greening)'
+INFO:tensorflow:Looking for images in 'Peach___Bacterial_spot'
+INFO:tensorflow:Looking for images in 'Peach___healthy'
+INFO:tensorflow:Looking for images in 'Pepper,_bell___Bacterial_spot'
+INFO:tensorflow:Looking for images in 'Pepper,_bell___healthy'
+INFO:tensorflow:Looking for images in 'Potato___Early_blight'
+INFO:tensorflow:Looking for images in 'Potato___Late_blight'
+INFO:tensorflow:Looking for images in 'Potato___healthy'
+INFO:tensorflow:Looking for images in 'Raspberry___healthy'
+INFO:tensorflow:Looking for images in 'Rose___Anthracnose'
+WARNING:tensorflow:WARNING: Folder has less than 20 images, which may cause issues.
+INFO:tensorflow:Looking for images in 'Rose___Mildew'
+WARNING:tensorflow:No files found
+INFO:tensorflow:Looking for images in 'Rose___Rust'
+WARNING:tensorflow:No files found
+INFO:tensorflow:Looking for images in 'Rose___Spot'
+WARNING:tensorflow:No files found
+INFO:tensorflow:Looking for images in 'Soybean___healthy'
+INFO:tensorflow:Looking for images in 'Squash___Powdery_mildew'
+INFO:tensorflow:Looking for images in 'Strawberry___Leaf_scorch'
+INFO:tensorflow:Looking for images in 'Strawberry___healthy'
+INFO:tensorflow:Looking for images in 'Sunflower___Blight'
+WARNING:tensorflow:WARNING: Folder has less than 20 images, which may cause issues.
+INFO:tensorflow:Looking for images in 'Sunflower___Mildew'
+INFO:tensorflow:Looking for images in 'Sunflower___Rust'
+WARNING:tensorflow:WARNING: Folder has less than 20 images, which may cause issues.
+INFO:tensorflow:Looking for images in 'Tomato___Bacterial_spot'
+INFO:tensorflow:Looking for images in 'Tomato___Early_blight'
+INFO:tensorflow:Looking for images in 'Tomato___Late_blight'
+INFO:tensorflow:Looking for images in 'Tomato___Leaf_Mold'
+INFO:tensorflow:Looking for images in 'Tomato___Septoria_leaf_spot'
+INFO:tensorflow:Looking for images in 'Tomato___Spider_mites Two-spotted_spider_mite'
+INFO:tensorflow:Looking for images in 'Tomato___Target_Spot'
+INFO:tensorflow:Looking for images in 'Tomato___Tomato_Yellow_Leaf_Curl_Virus'
+INFO:tensorflow:Looking for images in 'Tomato___Tomato_mosaic_virus'
+INFO:tensorflow:Looking for images in 'Tomato___healthy'
+2019-04-06 18:27:34.563222: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2019-04-06 18:27:34.576889: I tensorflow/core/common_runtime/process_util.cc:69] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+INFO:tensorflow:100 bottleneck files created.
+INFO:tensorflow:200 bottleneck files created.
+INFO:tensorflow:300 bottleneck files created.
+INFO:tensorflow:400 bottleneck files created.
+INFO:tensorflow:500 bottleneck files created.
+INFO:tensorflow:600 bottleneck files created.
+INFO:tensorflow:700 bottleneck files created.
+INFO:tensorflow:800 bottleneck files created.
+INFO:tensorflow:900 bottleneck files created.
+INFO:tensorflow:1000 bottleneck files created.
+INFO:tensorflow:1100 bottleneck files created.
+INFO:tensorflow:1200 bottleneck files created.
+INFO:tensorflow:1300 bottleneck files created.
+INFO:tensorflow:1400 bottleneck files created.
+INFO:tensorflow:1500 bottleneck files created.
+INFO:tensorflow:1600 bottleneck files created.
+INFO:tensorflow:1700 bottleneck files created.
+INFO:tensorflow:1800 bottleneck files created.
+INFO:tensorflow:1900 bottleneck files created.
+INFO:tensorflow:2000 bottleneck files created.
+INFO:tensorflow:2100 bottleneck files created.
+INFO:tensorflow:2200 bottleneck files created.
+INFO:tensorflow:2300 bottleneck files created.
+INFO:tensorflow:2400 bottleneck files created.
+INFO:tensorflow:2500 bottleneck files created.
+INFO:tensorflow:2600 bottleneck files created.
+INFO:tensorflow:2700 bottleneck files created.
+INFO:tensorflow:2800 bottleneck files created.
+INFO:tensorflow:2900 bottleneck files created.
+INFO:tensorflow:3000 bottleneck files created.
+INFO:tensorflow:3100 bottleneck files created.
+INFO:tensorflow:3200 bottleneck files created.
+INFO:tensorflow:3300 bottleneck files created.
+INFO:tensorflow:3400 bottleneck files created.
+INFO:tensorflow:3500 bottleneck files created.
+INFO:tensorflow:3600 bottleneck files created.
+INFO:tensorflow:3700 bottleneck files created.
+INFO:tensorflow:3800 bottleneck files created.
+INFO:tensorflow:3900 bottleneck files created.
+INFO:tensorflow:4000 bottleneck files created.
+INFO:tensorflow:4100 bottleneck files created.
+INFO:tensorflow:4200 bottleneck files created.
+INFO:tensorflow:4300 bottleneck files created.
+INFO:tensorflow:4400 bottleneck files created.
+INFO:tensorflow:4500 bottleneck files created.
+INFO:tensorflow:4600 bottleneck files created.
+INFO:tensorflow:4700 bottleneck files created.
+INFO:tensorflow:4800 bottleneck files created.
+INFO:tensorflow:4900 bottleneck files created.
+INFO:tensorflow:5000 bottleneck files created.
+INFO:tensorflow:5100 bottleneck files created.
+INFO:tensorflow:5200 bottleneck files created.
+INFO:tensorflow:5300 bottleneck files created.
+INFO:tensorflow:5400 bottleneck files created.
+INFO:tensorflow:5500 bottleneck files created.
+INFO:tensorflow:5600 bottleneck files created.
+INFO:tensorflow:5700 bottleneck files created.
+INFO:tensorflow:5800 bottleneck files created.
+INFO:tensorflow:5900 bottleneck files created.
+INFO:tensorflow:6000 bottleneck files created.
+INFO:tensorflow:6100 bottleneck files created.
+INFO:tensorflow:6200 bottleneck files created.
+INFO:tensorflow:6300 bottleneck files created.
+INFO:tensorflow:6400 bottleneck files created.
+INFO:tensorflow:6500 bottleneck files created.
+INFO:tensorflow:6600 bottleneck files created.
+INFO:tensorflow:6700 bottleneck files created.
+INFO:tensorflow:6800 bottleneck files created.
+INFO:tensorflow:6900 bottleneck files created.
+INFO:tensorflow:7000 bottleneck files created.
+INFO:tensorflow:7100 bottleneck files created.
+INFO:tensorflow:7200 bottleneck files created.
+INFO:tensorflow:7300 bottleneck files created.
+INFO:tensorflow:7400 bottleneck files created.
+INFO:tensorflow:7500 bottleneck files created.
+INFO:tensorflow:7600 bottleneck files created.
+INFO:tensorflow:7700 bottleneck files created.
+INFO:tensorflow:7800 bottleneck files created.
+INFO:tensorflow:7900 bottleneck files created.
+INFO:tensorflow:8000 bottleneck files created.
+INFO:tensorflow:8100 bottleneck files created.
+INFO:tensorflow:8200 bottleneck files created.
+INFO:tensorflow:8300 bottleneck files created.
+INFO:tensorflow:8400 bottleneck files created.
+INFO:tensorflow:8500 bottleneck files created.
+INFO:tensorflow:8600 bottleneck files created.
+INFO:tensorflow:8700 bottleneck files created.
+INFO:tensorflow:8800 bottleneck files created.
+INFO:tensorflow:8900 bottleneck files created.
+INFO:tensorflow:9000 bottleneck files created.
+INFO:tensorflow:9100 bottleneck files created.
+INFO:tensorflow:9200 bottleneck files created.
+INFO:tensorflow:9300 bottleneck files created.
+INFO:tensorflow:9400 bottleneck files created.
+INFO:tensorflow:9500 bottleneck files created.
+INFO:tensorflow:9600 bottleneck files created.
+INFO:tensorflow:9700 bottleneck files created.
+INFO:tensorflow:9800 bottleneck files created.
+INFO:tensorflow:9900 bottleneck files created.
+INFO:tensorflow:10000 bottleneck files created.
+INFO:tensorflow:10100 bottleneck files created.
+INFO:tensorflow:10200 bottleneck files created.
+INFO:tensorflow:10300 bottleneck files created.
+INFO:tensorflow:10400 bottleneck files created.
+INFO:tensorflow:10500 bottleneck files created.
+INFO:tensorflow:10600 bottleneck files created.
+INFO:tensorflow:10700 bottleneck files created.
+INFO:tensorflow:10800 bottleneck files created.
+INFO:tensorflow:10900 bottleneck files created.
+INFO:tensorflow:11000 bottleneck files created.
+INFO:tensorflow:11100 bottleneck files created.
+INFO:tensorflow:11200 bottleneck files created.
+INFO:tensorflow:11300 bottleneck files created.
+INFO:tensorflow:11400 bottleneck files created.
+INFO:tensorflow:11500 bottleneck files created.
+INFO:tensorflow:11600 bottleneck files created.
+INFO:tensorflow:11700 bottleneck files created.
+INFO:tensorflow:11800 bottleneck files created.
+INFO:tensorflow:11900 bottleneck files created.
+INFO:tensorflow:12000 bottleneck files created.
+INFO:tensorflow:12100 bottleneck files created.
+INFO:tensorflow:12200 bottleneck files created.
+INFO:tensorflow:12300 bottleneck files created.
+INFO:tensorflow:12400 bottleneck files created.
+INFO:tensorflow:12500 bottleneck files created.
+INFO:tensorflow:12600 bottleneck files created.
+INFO:tensorflow:12700 bottleneck files created.
+INFO:tensorflow:12800 bottleneck files created.
+INFO:tensorflow:12900 bottleneck files created.
+INFO:tensorflow:13000 bottleneck files created.
+INFO:tensorflow:13100 bottleneck files created.
+INFO:tensorflow:13200 bottleneck files created.
+INFO:tensorflow:13300 bottleneck files created.
+INFO:tensorflow:13400 bottleneck files created.
+INFO:tensorflow:13500 bottleneck files created.
+INFO:tensorflow:13600 bottleneck files created.
+INFO:tensorflow:13700 bottleneck files created.
+INFO:tensorflow:13800 bottleneck files created.
+INFO:tensorflow:13900 bottleneck files created.
+INFO:tensorflow:14000 bottleneck files created.
+INFO:tensorflow:14100 bottleneck files created.
+INFO:tensorflow:14200 bottleneck files created.
+INFO:tensorflow:14300 bottleneck files created.
+INFO:tensorflow:14400 bottleneck files created.
+INFO:tensorflow:14500 bottleneck files created.
+INFO:tensorflow:14600 bottleneck files created.
+INFO:tensorflow:14700 bottleneck files created.
+INFO:tensorflow:14800 bottleneck files created.
+INFO:tensorflow:14900 bottleneck files created.
+INFO:tensorflow:15000 bottleneck files created.
+INFO:tensorflow:15100 bottleneck files created.
+INFO:tensorflow:15200 bottleneck files created.
+INFO:tensorflow:15300 bottleneck files created.
+INFO:tensorflow:15400 bottleneck files created.
+INFO:tensorflow:15500 bottleneck files created.
+INFO:tensorflow:15600 bottleneck files created.
+INFO:tensorflow:15700 bottleneck files created.
+INFO:tensorflow:15800 bottleneck files created.
+INFO:tensorflow:15900 bottleneck files created.
+INFO:tensorflow:16000 bottleneck files created.
+INFO:tensorflow:16100 bottleneck files created.
+INFO:tensorflow:16200 bottleneck files created.
+INFO:tensorflow:16300 bottleneck files created.
+INFO:tensorflow:16400 bottleneck files created.
+INFO:tensorflow:16500 bottleneck files created.
+INFO:tensorflow:16600 bottleneck files created.
+INFO:tensorflow:16700 bottleneck files created.
+INFO:tensorflow:16800 bottleneck files created.
+INFO:tensorflow:16900 bottleneck files created.
+INFO:tensorflow:17000 bottleneck files created.
+INFO:tensorflow:17100 bottleneck files created.
+INFO:tensorflow:17200 bottleneck files created.
+INFO:tensorflow:17300 bottleneck files created.
+INFO:tensorflow:17400 bottleneck files created.
+INFO:tensorflow:17500 bottleneck files created.
+INFO:tensorflow:17600 bottleneck files created.
+INFO:tensorflow:17700 bottleneck files created.
+INFO:tensorflow:17800 bottleneck files created.
+INFO:tensorflow:17900 bottleneck files created.
+INFO:tensorflow:18000 bottleneck files created.
+INFO:tensorflow:18100 bottleneck files created.
+INFO:tensorflow:18200 bottleneck files created.
+INFO:tensorflow:18300 bottleneck files created.
+INFO:tensorflow:18400 bottleneck files created.
+INFO:tensorflow:18500 bottleneck files created.
+INFO:tensorflow:18600 bottleneck files created.
+INFO:tensorflow:18700 bottleneck files created.
+INFO:tensorflow:18800 bottleneck files created.
+INFO:tensorflow:18900 bottleneck files created.
+INFO:tensorflow:19000 bottleneck files created.
+INFO:tensorflow:19100 bottleneck files created.
+INFO:tensorflow:19200 bottleneck files created.
+INFO:tensorflow:19300 bottleneck files created.
+INFO:tensorflow:19400 bottleneck files created.
+INFO:tensorflow:19500 bottleneck files created.
+INFO:tensorflow:19600 bottleneck files created.
+INFO:tensorflow:19700 bottleneck files created.
+INFO:tensorflow:19800 bottleneck files created.
+INFO:tensorflow:19900 bottleneck files created.
+INFO:tensorflow:20000 bottleneck files created.
+INFO:tensorflow:20100 bottleneck files created.
+INFO:tensorflow:20200 bottleneck files created.
+INFO:tensorflow:20300 bottleneck files created.
+INFO:tensorflow:20400 bottleneck files created.
+INFO:tensorflow:20500 bottleneck files created.
+INFO:tensorflow:20600 bottleneck files created.
+INFO:tensorflow:20700 bottleneck files created.
+INFO:tensorflow:20800 bottleneck files created.
+INFO:tensorflow:20900 bottleneck files created.
+INFO:tensorflow:21000 bottleneck files created.
+INFO:tensorflow:21100 bottleneck files created.
+INFO:tensorflow:21200 bottleneck files created.
+INFO:tensorflow:21300 bottleneck files created.
+INFO:tensorflow:21400 bottleneck files created.
+INFO:tensorflow:21500 bottleneck files created.
+INFO:tensorflow:21600 bottleneck files created.
+INFO:tensorflow:21700 bottleneck files created.
+INFO:tensorflow:21800 bottleneck files created.
+INFO:tensorflow:21900 bottleneck files created.
+INFO:tensorflow:22000 bottleneck files created.
+INFO:tensorflow:22100 bottleneck files created.
+INFO:tensorflow:22200 bottleneck files created.
+INFO:tensorflow:22300 bottleneck files created.
+INFO:tensorflow:22400 bottleneck files created.
+INFO:tensorflow:22500 bottleneck files created.
+INFO:tensorflow:22600 bottleneck files created.
+INFO:tensorflow:22700 bottleneck files created.
+INFO:tensorflow:22800 bottleneck files created.
+INFO:tensorflow:22900 bottleneck files created.
+INFO:tensorflow:23000 bottleneck files created.
+INFO:tensorflow:23100 bottleneck files created.
+INFO:tensorflow:23200 bottleneck files created.
+INFO:tensorflow:23300 bottleneck files created.
+INFO:tensorflow:23400 bottleneck files created.
+INFO:tensorflow:23500 bottleneck files created.
+INFO:tensorflow:23600 bottleneck files created.
+INFO:tensorflow:23700 bottleneck files created.
+INFO:tensorflow:23800 bottleneck files created.
+INFO:tensorflow:23900 bottleneck files created.
+INFO:tensorflow:24000 bottleneck files created.
+INFO:tensorflow:24100 bottleneck files created.
+INFO:tensorflow:24200 bottleneck files created.
+INFO:tensorflow:24300 bottleneck files created.
+INFO:tensorflow:24400 bottleneck files created.
+INFO:tensorflow:24500 bottleneck files created.
+INFO:tensorflow:24600 bottleneck files created.
+INFO:tensorflow:24700 bottleneck files created.
+INFO:tensorflow:24800 bottleneck files created.
+INFO:tensorflow:24900 bottleneck files created.
+INFO:tensorflow:25000 bottleneck files created.
+INFO:tensorflow:25100 bottleneck files created.
+INFO:tensorflow:25200 bottleneck files created.
+INFO:tensorflow:25300 bottleneck files created.
+INFO:tensorflow:25400 bottleneck files created.
+INFO:tensorflow:25500 bottleneck files created.
+INFO:tensorflow:25600 bottleneck files created.
+INFO:tensorflow:25700 bottleneck files created.
+INFO:tensorflow:25800 bottleneck files created.
+INFO:tensorflow:25900 bottleneck files created.
+INFO:tensorflow:26000 bottleneck files created.
+INFO:tensorflow:26100 bottleneck files created.
+INFO:tensorflow:26200 bottleneck files created.
+INFO:tensorflow:26300 bottleneck files created.
+INFO:tensorflow:26400 bottleneck files created.
+INFO:tensorflow:26500 bottleneck files created.
+INFO:tensorflow:26600 bottleneck files created.
+INFO:tensorflow:26700 bottleneck files created.
+INFO:tensorflow:26800 bottleneck files created.
+INFO:tensorflow:26900 bottleneck files created.
+INFO:tensorflow:27000 bottleneck files created.
+INFO:tensorflow:27100 bottleneck files created.
+INFO:tensorflow:27200 bottleneck files created.
+INFO:tensorflow:27300 bottleneck files created.
+INFO:tensorflow:27400 bottleneck files created.
+INFO:tensorflow:27500 bottleneck files created.
+INFO:tensorflow:27600 bottleneck files created.
+INFO:tensorflow:27700 bottleneck files created.
+INFO:tensorflow:27800 bottleneck files created.
+INFO:tensorflow:27900 bottleneck files created.
+INFO:tensorflow:28000 bottleneck files created.
+INFO:tensorflow:28100 bottleneck files created.
+INFO:tensorflow:28200 bottleneck files created.
+INFO:tensorflow:28300 bottleneck files created.
+INFO:tensorflow:28400 bottleneck files created.
+INFO:tensorflow:28500 bottleneck files created.
+INFO:tensorflow:28600 bottleneck files created.
+INFO:tensorflow:28700 bottleneck files created.
+INFO:tensorflow:28800 bottleneck files created.
+INFO:tensorflow:28900 bottleneck files created.
+INFO:tensorflow:29000 bottleneck files created.
+INFO:tensorflow:29100 bottleneck files created.
+INFO:tensorflow:29200 bottleneck files created.
+INFO:tensorflow:29300 bottleneck files created.
+INFO:tensorflow:29400 bottleneck files created.
+INFO:tensorflow:29500 bottleneck files created.
+INFO:tensorflow:29600 bottleneck files created.
+INFO:tensorflow:29700 bottleneck files created.
+INFO:tensorflow:29800 bottleneck files created.
+INFO:tensorflow:29900 bottleneck files created.
+INFO:tensorflow:30000 bottleneck files created.
+INFO:tensorflow:30100 bottleneck files created.
+INFO:tensorflow:30200 bottleneck files created.
+INFO:tensorflow:30300 bottleneck files created.
+INFO:tensorflow:30400 bottleneck files created.
+INFO:tensorflow:30500 bottleneck files created.
+INFO:tensorflow:30600 bottleneck files created.
+INFO:tensorflow:30700 bottleneck files created.
+INFO:tensorflow:30800 bottleneck files created.
+INFO:tensorflow:30900 bottleneck files created.
+INFO:tensorflow:31000 bottleneck files created.
+INFO:tensorflow:31100 bottleneck files created.
+INFO:tensorflow:31200 bottleneck files created.
+INFO:tensorflow:31300 bottleneck files created.
+INFO:tensorflow:31400 bottleneck files created.
+INFO:tensorflow:31500 bottleneck files created.
+INFO:tensorflow:31600 bottleneck files created.
+INFO:tensorflow:31700 bottleneck files created.
+INFO:tensorflow:31800 bottleneck files created.
+INFO:tensorflow:31900 bottleneck files created.
+INFO:tensorflow:32000 bottleneck files created.
+INFO:tensorflow:32100 bottleneck files created.
+INFO:tensorflow:32200 bottleneck files created.
+INFO:tensorflow:32300 bottleneck files created.
+INFO:tensorflow:32400 bottleneck files created.
+INFO:tensorflow:32500 bottleneck files created.
+INFO:tensorflow:32600 bottleneck files created.
+INFO:tensorflow:32700 bottleneck files created.
+INFO:tensorflow:32800 bottleneck files created.
+INFO:tensorflow:32900 bottleneck files created.
+INFO:tensorflow:33000 bottleneck files created.
+INFO:tensorflow:33100 bottleneck files created.
+INFO:tensorflow:33200 bottleneck files created.
+INFO:tensorflow:33300 bottleneck files created.
+INFO:tensorflow:33400 bottleneck files created.
+INFO:tensorflow:33500 bottleneck files created.
+INFO:tensorflow:33600 bottleneck files created.
+INFO:tensorflow:33700 bottleneck files created.
+INFO:tensorflow:33800 bottleneck files created.
+INFO:tensorflow:33900 bottleneck files created.
+INFO:tensorflow:34000 bottleneck files created.
+INFO:tensorflow:34100 bottleneck files created.
+INFO:tensorflow:34200 bottleneck files created.
+INFO:tensorflow:34300 bottleneck files created.
+INFO:tensorflow:34400 bottleneck files created.
+INFO:tensorflow:34500 bottleneck files created.
+INFO:tensorflow:34600 bottleneck files created.
+INFO:tensorflow:34700 bottleneck files created.
+INFO:tensorflow:34800 bottleneck files created.
+INFO:tensorflow:34900 bottleneck files created.
+INFO:tensorflow:35000 bottleneck files created.
+INFO:tensorflow:35100 bottleneck files created.
+INFO:tensorflow:35200 bottleneck files created.
+INFO:tensorflow:35300 bottleneck files created.
+INFO:tensorflow:35400 bottleneck files created.
+INFO:tensorflow:35500 bottleneck files created.
+INFO:tensorflow:35600 bottleneck files created.
+INFO:tensorflow:35700 bottleneck files created.
+INFO:tensorflow:35800 bottleneck files created.
+INFO:tensorflow:35900 bottleneck files created.
+INFO:tensorflow:36000 bottleneck files created.
+INFO:tensorflow:36100 bottleneck files created.
+INFO:tensorflow:36200 bottleneck files created.
+INFO:tensorflow:36300 bottleneck files created.
+INFO:tensorflow:36400 bottleneck files created.
+INFO:tensorflow:36500 bottleneck files created.
+INFO:tensorflow:36600 bottleneck files created.
+INFO:tensorflow:36700 bottleneck files created.
+INFO:tensorflow:36800 bottleneck files created.
+INFO:tensorflow:36900 bottleneck files created.
+INFO:tensorflow:37000 bottleneck files created.
+INFO:tensorflow:37100 bottleneck files created.
+INFO:tensorflow:37200 bottleneck files created.
+INFO:tensorflow:37300 bottleneck files created.
+INFO:tensorflow:37400 bottleneck files created.
+INFO:tensorflow:37500 bottleneck files created.
+INFO:tensorflow:37600 bottleneck files created.
+INFO:tensorflow:37700 bottleneck files created.
+INFO:tensorflow:37800 bottleneck files created.
+INFO:tensorflow:37900 bottleneck files created.
+INFO:tensorflow:38000 bottleneck files created.
+INFO:tensorflow:38100 bottleneck files created.
+INFO:tensorflow:38200 bottleneck files created.
+INFO:tensorflow:38300 bottleneck files created.
+INFO:tensorflow:38400 bottleneck files created.
+INFO:tensorflow:38500 bottleneck files created.
+INFO:tensorflow:38600 bottleneck files created.
+INFO:tensorflow:38700 bottleneck files created.
+INFO:tensorflow:38800 bottleneck files created.
+INFO:tensorflow:38900 bottleneck files created.
+INFO:tensorflow:39000 bottleneck files created.
+INFO:tensorflow:39100 bottleneck files created.
+INFO:tensorflow:39200 bottleneck files created.
+INFO:tensorflow:39300 bottleneck files created.
+INFO:tensorflow:39400 bottleneck files created.
+INFO:tensorflow:39500 bottleneck files created.
+INFO:tensorflow:39600 bottleneck files created.
+INFO:tensorflow:39700 bottleneck files created.
+INFO:tensorflow:39800 bottleneck files created.
+INFO:tensorflow:39900 bottleneck files created.
+INFO:tensorflow:40000 bottleneck files created.
+INFO:tensorflow:40100 bottleneck files created.
+INFO:tensorflow:40200 bottleneck files created.
+INFO:tensorflow:40300 bottleneck files created.
+INFO:tensorflow:40400 bottleneck files created.
+INFO:tensorflow:40500 bottleneck files created.
+INFO:tensorflow:40600 bottleneck files created.
+INFO:tensorflow:40700 bottleneck files created.
+INFO:tensorflow:40800 bottleneck files created.
+INFO:tensorflow:40900 bottleneck files created.
+INFO:tensorflow:41000 bottleneck files created.
+INFO:tensorflow:41100 bottleneck files created.
+INFO:tensorflow:41200 bottleneck files created.
+INFO:tensorflow:41300 bottleneck files created.
+INFO:tensorflow:41400 bottleneck files created.
+INFO:tensorflow:41500 bottleneck files created.
+INFO:tensorflow:41600 bottleneck files created.
+INFO:tensorflow:41700 bottleneck files created.
+INFO:tensorflow:41800 bottleneck files created.
+INFO:tensorflow:41900 bottleneck files created.
+INFO:tensorflow:42000 bottleneck files created.
+INFO:tensorflow:42100 bottleneck files created.
+INFO:tensorflow:42200 bottleneck files created.
+INFO:tensorflow:42300 bottleneck files created.
+INFO:tensorflow:42400 bottleneck files created.
+INFO:tensorflow:42500 bottleneck files created.
+INFO:tensorflow:42600 bottleneck files created.
+INFO:tensorflow:42700 bottleneck files created.
+INFO:tensorflow:42800 bottleneck files created.
+INFO:tensorflow:42900 bottleneck files created.
+INFO:tensorflow:43000 bottleneck files created.
+INFO:tensorflow:43100 bottleneck files created.
+INFO:tensorflow:43200 bottleneck files created.
+INFO:tensorflow:43300 bottleneck files created.
+INFO:tensorflow:43400 bottleneck files created.
+INFO:tensorflow:43500 bottleneck files created.
+INFO:tensorflow:43600 bottleneck files created.
+INFO:tensorflow:43700 bottleneck files created.
+INFO:tensorflow:43800 bottleneck files created.
+INFO:tensorflow:43900 bottleneck files created.
+INFO:tensorflow:44000 bottleneck files created.
+INFO:tensorflow:44100 bottleneck files created.
+INFO:tensorflow:44200 bottleneck files created.
+INFO:tensorflow:44300 bottleneck files created.
+INFO:tensorflow:44400 bottleneck files created.
+INFO:tensorflow:44500 bottleneck files created.
+INFO:tensorflow:44600 bottleneck files created.
+INFO:tensorflow:44700 bottleneck files created.
+INFO:tensorflow:44800 bottleneck files created.
+INFO:tensorflow:44900 bottleneck files created.
+INFO:tensorflow:45000 bottleneck files created.
+INFO:tensorflow:45100 bottleneck files created.
+INFO:tensorflow:45200 bottleneck files created.
+INFO:tensorflow:45300 bottleneck files created.
+INFO:tensorflow:45400 bottleneck files created.
+INFO:tensorflow:45500 bottleneck files created.
+INFO:tensorflow:45600 bottleneck files created.
+INFO:tensorflow:45700 bottleneck files created.
+INFO:tensorflow:45800 bottleneck files created.
+INFO:tensorflow:45900 bottleneck files created.
+INFO:tensorflow:46000 bottleneck files created.
+INFO:tensorflow:46100 bottleneck files created.
+INFO:tensorflow:46200 bottleneck files created.
+INFO:tensorflow:46300 bottleneck files created.
+INFO:tensorflow:46400 bottleneck files created.
+INFO:tensorflow:46500 bottleneck files created.
+INFO:tensorflow:46600 bottleneck files created.
+INFO:tensorflow:46700 bottleneck files created.
+INFO:tensorflow:46800 bottleneck files created.
+INFO:tensorflow:46900 bottleneck files created.
+INFO:tensorflow:47000 bottleneck files created.
+INFO:tensorflow:47100 bottleneck files created.
+INFO:tensorflow:47200 bottleneck files created.
+INFO:tensorflow:47300 bottleneck files created.
+INFO:tensorflow:47400 bottleneck files created.
+INFO:tensorflow:47500 bottleneck files created.
+INFO:tensorflow:47600 bottleneck files created.
+INFO:tensorflow:47700 bottleneck files created.
+INFO:tensorflow:47800 bottleneck files created.
+INFO:tensorflow:47900 bottleneck files created.
+INFO:tensorflow:48000 bottleneck files created.
+INFO:tensorflow:48100 bottleneck files created.
+INFO:tensorflow:48200 bottleneck files created.
+INFO:tensorflow:48300 bottleneck files created.
+INFO:tensorflow:48400 bottleneck files created.
+INFO:tensorflow:48500 bottleneck files created.
+INFO:tensorflow:48600 bottleneck files created.
+INFO:tensorflow:48700 bottleneck files created.
+INFO:tensorflow:48800 bottleneck files created.
+INFO:tensorflow:48900 bottleneck files created.
+INFO:tensorflow:49000 bottleneck files created.
+INFO:tensorflow:49100 bottleneck files created.
+INFO:tensorflow:49200 bottleneck files created.
+INFO:tensorflow:49300 bottleneck files created.
+INFO:tensorflow:49400 bottleneck files created.
+INFO:tensorflow:49500 bottleneck files created.
+INFO:tensorflow:49600 bottleneck files created.
+INFO:tensorflow:49700 bottleneck files created.
+INFO:tensorflow:49800 bottleneck files created.
+INFO:tensorflow:49900 bottleneck files created.
+INFO:tensorflow:50000 bottleneck files created.
+INFO:tensorflow:50100 bottleneck files created.
+INFO:tensorflow:50200 bottleneck files created.
+INFO:tensorflow:50300 bottleneck files created.
+INFO:tensorflow:50400 bottleneck files created.
+INFO:tensorflow:50500 bottleneck files created.
+INFO:tensorflow:50600 bottleneck files created.
+INFO:tensorflow:50700 bottleneck files created.
+INFO:tensorflow:50800 bottleneck files created.
+INFO:tensorflow:50900 bottleneck files created.
+INFO:tensorflow:51000 bottleneck files created.
+INFO:tensorflow:51100 bottleneck files created.
+INFO:tensorflow:51200 bottleneck files created.
+INFO:tensorflow:51300 bottleneck files created.
+INFO:tensorflow:51400 bottleneck files created.
+INFO:tensorflow:51500 bottleneck files created.
+INFO:tensorflow:51600 bottleneck files created.
+INFO:tensorflow:51700 bottleneck files created.
+INFO:tensorflow:51800 bottleneck files created.
+INFO:tensorflow:51900 bottleneck files created.
+INFO:tensorflow:52000 bottleneck files created.
+INFO:tensorflow:52100 bottleneck files created.
+INFO:tensorflow:52200 bottleneck files created.
+INFO:tensorflow:52300 bottleneck files created.
+INFO:tensorflow:52400 bottleneck files created.
+INFO:tensorflow:52500 bottleneck files created.
+INFO:tensorflow:52600 bottleneck files created.
+INFO:tensorflow:52700 bottleneck files created.
+INFO:tensorflow:52800 bottleneck files created.
+INFO:tensorflow:52900 bottleneck files created.
+INFO:tensorflow:53000 bottleneck files created.
+INFO:tensorflow:53100 bottleneck files created.
+INFO:tensorflow:53200 bottleneck files created.
+INFO:tensorflow:53300 bottleneck files created.
+INFO:tensorflow:53400 bottleneck files created.
+INFO:tensorflow:53500 bottleneck files created.
+INFO:tensorflow:53600 bottleneck files created.
+INFO:tensorflow:53700 bottleneck files created.
+INFO:tensorflow:53800 bottleneck files created.
+INFO:tensorflow:53900 bottleneck files created.
+INFO:tensorflow:54000 bottleneck files created.
+INFO:tensorflow:54100 bottleneck files created.
+INFO:tensorflow:54200 bottleneck files created.
+INFO:tensorflow:54300 bottleneck files created.
+INFO:tensorflow:54400 bottleneck files created.
+INFO:tensorflow:54500 bottleneck files created.
+INFO:tensorflow:54600 bottleneck files created.
+INFO:tensorflow:54700 bottleneck files created.
+WARNING:tensorflow:From scripts/retrain.py:790: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+INFO:tensorflow:2019-04-06 18:28:33.420242: Step 0: Train accuracy = 19.0%
+INFO:tensorflow:2019-04-06 18:28:33.918385: Step 0: Cross entropy = 3.790834
+CRITICAL:tensorflow:Label rose anthracnose has no images in the category validation.
+Traceback (most recent call last):
+  File "scripts/retrain.py", line 1326, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/platform/app.py", line 125, in run
+    _sys.exit(main(argv))
+  File "scripts/retrain.py", line 1090, in main
+    FLAGS.architecture))
+  File "scripts/retrain.py", line 525, in get_random_cached_bottlenecks
+    image_dir, category)
+  File "scripts/retrain.py", line 234, in get_image_path
+    mod_index = index % len(category_list)
+ZeroDivisionError: integer division or modulo by zero
